@@ -15,7 +15,7 @@ url = 'http://127.0.0.1:8000/api/add_event/'
 random = Random.get_str(5)
 token = 'd06da11c96d37f353fad887d7b49521db2e36b92'
 headers = {'token': token, 'random': random}
-data = {'title': '小米发布会', 'time': '2017-11-25', 'address': '地中海风情岛', 'username': 'huice'}
+data = {'title': '锤子发布会', 'time': '2017-11-25', 'address': '地中海风情岛1', 'username': 'huice'}
 sign = encrypt.get_sign(token, data, random)
 data['sign'] = sign
 response = requests.request('POST', url=url, headers=headers, data=data).json()

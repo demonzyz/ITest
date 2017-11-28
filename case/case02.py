@@ -4,6 +4,9 @@ from util import Random
 
 from util import encrypt
 
+"""
+登录获取Token接口  异常用户名流程
+"""
 url = 'http://127.0.0.1:8000/api/register/'
 username = ''
 password =  'huicehuice!@#'
